@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dependent Form Fields</title>
+</head>
+<body>
+  <form>
+    <label for="country">Country:</label>
+    <select id="country" onchange="updateCityOptions()">
+      <option value="">Select a country</option>
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+    </select>
+
+    <label for="city">City:</label>
+    <select id="city">
+      <option value="">Select a city</option>
+    </select>
+  </form>
+
+  <script>
+    function updateCityOptions() {
+      var countrySelect = document.getElementById('country');
+      var citySelect = document.getElementById('city');
+      var selectedCountry = countrySelect.value;
+
+      // Clear previous options
+      citySelect.innerHTML = '';
+
+      if (selectedCountry === 'usa') {
+        var cities = ['New York', 'Los Angeles', 'Chicago'];
+      } else if (selectedCountry === 'canada') {
+        var cities = ['Toronto', 'Vancouver', 'Montreal'];
+      } else {
+        var cities = [];
+      }
+
+      // Populate city options
+      for (var i = 0; i < cities.length; i++) {
+        var option = document.createElement('option');
+        option.value = cities[i];
+        option.text = cities[i];
+        citySelect.appendChild(option);
+      }
+    }
+  </script>
+</body>
+</html>

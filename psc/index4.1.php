@@ -1,0 +1,198 @@
+<?php
+ include "dbase.php";
+ ?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PSC Project </title>
+    <!-- Bootstrap Lib's css  -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+    <div class="container">
+        <main>
+          <div class="py-2 text-center">
+            <h2>இடமாற்ற விண்ணப்பம் </h2>
+            <!-- <p class="lead">Some Description Here.</p> -->
+          </div>
+
+
+          <div class="col-12">
+            <br><p><u><h3>மாகாண அரசாங்க சேவை</h3></u></p><br>
+          <label for="inno" class="form-label">இடமாற்றம் கோரும் மாகாண சபை:</label>
+          <select name="type" id="" class="form-control form-select" required>
+            <option value="" disabled hidden selected>தேர்ந்தெடு </option>
+            
+            <option value="">உள்ளாட்சித் துறை
+            </option>
+            <option value="">காலி மாநகர சபை
+            </option>
+            <option value="">அம்பலாங்கொட மாநகர சபை
+            </option>
+            <option value="">நயாகமா பிராந்திய கவுன்சில்
+            </option>
+            <option value="">நெலுவா பிராந்திய சபை
+            </option>
+            <option value="">பென்டோட்டா பிராந்திய சபை
+            </option>
+            <option value="">வெலிவிடிய திவித்துறை பிராந்திய சபை
+            </option>
+            <option value="">போப் போடாடாலா பிராந்திய கவுன்சில்
+            </option>
+            <option value="">ராஜ்கம உள்ளூராட்சி மன்றம்
+            </option>
+            <option value="">ஹிக்கடுவ நகர சபை
+            </option>
+            <option value="">இமதுவ பிரதேச சபை
+            </option>
+            <option value="">அக்மீமன பிராந்திய சபை
+            </option>
+            <option value="">பத்தேகம பிராந்திய சபை
+            </option>
+            <option value="">நாகொட பிரதேச சபை
+            </option>
+            <option value="">கரந்தெனிய பிரதேச சபை
+            </option>
+            <option value="">தவலம பிரதேச சபை
+            </option>
+            <option value="">யக்கலமுல்ல பிரதேச சபை
+            </option>
+            <option value="">ஹபராதுவ பிரதேச சபை
+            </option>
+            <option value="">அம்பலாங்கொட பிரதேச சபை
+            </option>
+            <option value="">எல்பிட்டிய பிரதேச சபை
+            </option>
+            <option value="">பலபிட்டிய பிரதேச சபை
+            </option>
+            <option value="">மாத்தறை மாநகர சபை
+            </option>
+            <option value="">தெவிநுவர பிரதேச சபை
+            </option>
+            <option value="">கொட்டபொல பிரதேச சபை
+            </option>
+            <option value="">பிடபெத்தர பிரதேச சபை
+            </option>
+            <option value="">பஸ்கொட பிராந்திய சபை
+            </option>
+
+            <option value="">வெலிகம மாநகர சபை
+            </option>
+            <option value="">கிரிந்த புஹுல்வெல்ல பிரதேச சபை
+            </option>
+            <option value="">முல்லட்டியான பிரதேச சபை
+            </option>
+            <option value="">அத்துரலிய பிரதேச சபை
+            </option>
+            <option value="">டிக்வெல்ல பிராந்திய சபை
+            </option>
+            <option value="">கம்புருபிட்டிய பிரதேச சபை
+            </option>
+            <option value="">மாத்தறை பிராந்திய சபை
+            </option>
+            <option value="">ஹக்மான பிராந்திய சபை
+            </option>
+            <option value="">அக்குரஸ்ஸ பிராந்திய சபை
+            </option>
+            <option value="">வெலிகம உள்ளூராட்சி சபை
+            </option>
+
+            <option value="">திஹாகொட பிராந்திய சபை
+            </option>
+            <option value="">மலிம்படா பிராந்திய சபை
+            </option>
+            <option value="">ஹம்பாந்தோட்டை மகாநகர சபை
+            </option>
+            <option value="">தங்காலை மாநகர சபை
+            </option>
+            <option value="">அம்பலாந்தோட்டை பிரதேச சபை
+            </option>
+            <option value="">சூரியவெவ பிராந்திய சபை
+            </option>
+            <option value="">பெலியத்த பிராந்திய சபை
+            </option>
+            <option value="">லுனுகம்வெஹர பிராந்திய சபை
+            </option>
+            <option value="">அங்குனுகொலபலஸ்ஸ பிராந்திய சபை
+            </option>
+            <option value="">கட்டுவன பிரதேச சபை
+            </option>
+            <option value="">ஹம்பாந்தோட்டை பிராந்திய சபை
+            </option>
+            <option value="">திஸ்ஸமஹாராம பிரதேச சபை
+            </option>
+            <option value="">வீரகட்டிய பிராந்திய சபை
+            </option>
+            <option value="">தங்காலை பிராந்திய சபை
+            </option>
+           
+           
+          </select>
+          <div class="invalid-feedback">
+         
+            </div>
+          </div>
+        
+
+        <div class="col-12">
+            
+          <label for="inno" class="form-label">மாகாண அமைச்சு:</label>
+          <div class="input-group has-validation">
+            <!--<span class="input-group-text">@</span>-->
+            <input type="text" class="form-control" id="inno"placeholder=" " required>
+          <div class="invalid-feedback">
+         
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="inno" class="form-label">மாகாண திணைக்களம்:</label>
+          <div class="input-group has-validation">
+            <!--<span class="input-group-text">@</span>-->
+            <input type="text" class="form-control" id="inno"placeholder=" " required>
+          <div class="invalid-feedback">
+         
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="inno" class="form-label">காரியாலயம்:</label>
+          <div class="input-group has-validation">
+            <!--<span class="input-group-text">@</span>-->
+            <input type="text" class="form-control" id="inno"placeholder=" " required>
+          <div class="invalid-feedback">
+         
+            </div>
+          </div>
+        </div>
+              
+
+              
+              
+              
+                    <div id="saved"></div>
+                    <hr class="my-4">
+                    <a href="index4.php" class="btn btn-primary btn-lg">முந்தைய </a>
+                    <a href="index01.php" class="btn btn-primary btn-lg">மடக்கு </a>
+             
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+        function la(src){
+          window.location=src;
+        }
+      </script>
+      </body>
+    
+    </html>
