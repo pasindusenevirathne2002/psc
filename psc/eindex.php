@@ -19,7 +19,7 @@
 <div class="container">
   <main>
     <div class="py-2 text-center">
-      <h2>Transfer Application </h2>
+      <h2>Transfer Application (Southern Province) </h2>
       <!-- <p class="lead">Some Description Here.</p> -->
     </div>
  
@@ -28,20 +28,23 @@
      
       <div class="row g-3">
         <div class="col-sm-6">
-          <label for="mname" class="form-label">Provincial Ministry: </label>
+          <label for="mname" class="form-label">Southern Provincial Ministry: </label>
 
           <select name="type" id="type" class="form-control form-select" required>
-            <option value="" disabled hidden selected>Select </option>
-            <option value="Independent">Independent</option>
+            <option value="" disabled hidden selected>----Select---- </option>
+           
             <option value="Chief Ministry">Chief Ministry</option>
             <option value="Ministry of Education">Ministry of Education</option>
             <option value="Ministry of Agricultur">Ministry of Agriculture </option>
             <option value="Ministry of Fisheries">Ministry of Fisheries</option>
             <option value="Ministry of Sports">Ministry of Sports</option>
+            <option value="Governor's Secretariat">Governor's Secretariat</option>
+            <option value="Council Secretariat">Council Secretariat</option>
+            <option value="Provincial Public Service Commission">Provincial Public Service Commission</option>
             
         </select>
       <div class="invalid-feedback">
-        
+        Pleace Enter Your Details.
           </div>
         </div>
 
@@ -49,7 +52,7 @@
           <label for="dname" class="form-label">Department:</label>
       <input type="text" class="form-control" id="dname" placeholder="" value="" required>
       <div class="invalid-feedback">
-      
+      Pleace Enter Your Details.
       </div>
         </div>
 
@@ -61,7 +64,7 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="text" class="form-control" id="officername"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
@@ -72,7 +75,7 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="number" class="form-control" id="nicno"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
@@ -83,7 +86,7 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="text" class="form-control" id="address"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
@@ -94,7 +97,7 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="text" class="form-control" id="address"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
@@ -105,7 +108,7 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="text" class="form-control" id="inno"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
@@ -116,7 +119,7 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="number" class="form-control" id="inno"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
@@ -127,7 +130,7 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="number" class="form-control" id="inno"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
@@ -138,19 +141,19 @@
                 <!--<span class="input-group-text">@</span>-->
                 <input type="mail" class="form-control" id="inno"placeholder=" " required>
               <div class="invalid-feedback">
-             
+              Pleace Enter Your Details.
                 </div>
               </div>
             </div>
            </div>
-           </div>
-    
+           </div><br>
+           <p style="text-align: right;">~Page 01~</p>
           <div id="saved"></div>
           <hr class="my-4">
 
-          <!-- <button class="btn btn-primary btn-lg" onclick ="adddata()" >SAVE</button> -->
-          <a href="eindex1.php" class="btn btn-primary btn-lg" onclick ="adddata()">NEXT </a>
-      
+          <button class="btn btn-primary btn-lg" onclick ="adddata()" >SAVE</button>
+          <!-- <a href="eindex1.php"name="next" class="btn btn-primary btn-lg" onclick ="adddata()">NEXT </a>
+       -->
           <input type="hidden" id="subno" value="0">
         </div>
       </div>

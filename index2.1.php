@@ -1,0 +1,90 @@
+<?php
+ include "dbase.php";
+ ?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PSC Project </title>
+    <!-- Bootstrap Lib's css  -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+    <div class="container">
+        <main>
+          <div class="py-2 text-center">
+            <h2>இடமாற்ற விண்ணப்பம்  </h2>
+            <!-- <p class="lead">Some Description Here.</p> -->
+          </div>
+
+
+<div class="col-12">
+    <p><h4><center>Marrege Status</center></h4></p>
+              <label for="inno" class="form-label">வாழ்க்கைத்துணையின் பெயர்:</label>
+              <div class="input-group has-validation">
+                <!--<span class="input-group-text">@</span>-->
+                <input type="text" class="form-control" id=""placeholder=" " required>
+              <div class="invalid-feedback">
+             
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="inno" class="form-label">வாழ்க்கைத் துணை தொழில் செய்பவராயின், பணியிடத்தின் முகவரி:</label>
+              <div class="input-group has-validation">
+                <!--<span class="input-group-text">@</span>-->
+                <input type="text" class="form-control" id=""placeholder=" " required>
+              <div class="invalid-feedback">
+             
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="inno" class="form-label">வாழ்க்கைத் துணையின் நிரந்தர குடியிருப்பு முகவரி:</label>
+              <div class="input-group has-validation">
+                <!--<span class="input-group-text">@</span>-->
+                <input type="text" class="form-control" id=""placeholder=" " required>
+              <div class="invalid-feedback">
+             
+                </div>
+              </div>
+            </div>
+
+         
+            <div class="col-12">
+                <label for="ol" class="form-label">வாழ்க்கைத் துணை, இராணுவம் அல்லது காவல்துறையில் தொழில் செய்பவரா?:</label>
+                <select name="type" id="" onchange="la(this.value)"  class="form-control form-select" required>
+                <option value="" disabled hidden selected>தேர்ந்தெடு </option>
+                <option value="index2.1.1.php">ஆம் </option>
+                <option value="">இல்லை </option>
+              </select>
+            <div class="invalid-feedback">
+            </div>
+            </div>
+             
+           
+              <div id="saved"></div>
+              <hr class="my-4">
+              <a href="index2.php" class="btn btn-primary btn-lg">முந்தைய </a>
+              <a href="index2.2.php" class="btn btn-primary btn-lg">அடுத்து </a>
+       
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+<script>
+    function la(src){
+      window.location=src;
+    }
+  </script>
+</body>
+
+</html>
